@@ -1,0 +1,22 @@
+# Calculator
+
+def calculation(a,b,c):
+    if b=='*':
+        ca = a*c
+    elif b== '+':
+        ca= a + c
+    elif b=='-':
+        ca = a-c
+    elif b=='/':
+        ca = a/c
+    else:
+        print('Select a Valid Option(*,+,-,/)')
+        ca ='ERROR'
+    return ca
+
+num = int(input("Type First Number\n"))
+sym = input('Select : *,+,-,/\n')
+num2 = int(input('Type second Number\n'))
+
+print('Your Result for ',num,sym,num,'=', calculation(num,sym,num2))
+print("Thank You")
